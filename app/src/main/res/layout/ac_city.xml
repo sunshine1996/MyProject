@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.bluemobi.xiaobaogao.CityAc$PlaceholderFragment" >
+
+    <include layout="@layout/ac_title" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true" >
+
+        <cn.bluemobi.view.ClearEditText
+            android:id="@+id/clearEditText1"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim96"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:drawablePadding="@dimen/dim20"
+            android:drawableLeft="@drawable/search_city"
+            android:hint="输入城市名"
+            android:paddingLeft="@dimen/dim20"
+            android:singleLine="true" >
+        </cn.bluemobi.view.ClearEditText>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/sortListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:divider="@null" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="@dimen/dim192"
+            android:layout_height="@dimen/dim192"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:gravity="center"
+            android:textColor="#ffC3C3C3"
+            android:textSize="@dimen/dim72"
+            android:visibility="invisible" />
+
+        <cn.bluemobi.view.SideBar
+            android:id="@+id/sideBar"
+            android:layout_width="@dimen/dim72"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center" />
+    </FrameLayout>
+
+</LinearLayout>

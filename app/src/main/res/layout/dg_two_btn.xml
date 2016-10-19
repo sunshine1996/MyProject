@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_fram_grey_shallow_corner"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dim8" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/dim20"
+        android:text="提示"
+        android:textColor="@color/grey_deep"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/dim20"
+        android:text="此模块只对VIP开放"
+        android:textColor="@color/grey_deep"
+        android:textSize="@dimen/dim40" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_shallow"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dim2" >
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="@dimen/dim1"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="@dimen/dim20"
+            android:text="暂不考虑"
+            android:textColor="@color/grey_deep"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/dim1"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="@dimen/dim20"
+            android:text="开通VIP"
+            android:textColor="@color/green_deep"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

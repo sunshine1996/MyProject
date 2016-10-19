@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/dim20" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dim20"
+        android:paddingTop="@dimen/dim20"
+        android:text="热门"
+        android:textColor="@color/grey_deep"
+        android:textSize="@dimen/txt35" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim1"
+        android:background="@color/grey_shallow" />
+
+    <cn.bluemobi.view.ExtraGridView
+        android:id="@+id/gv_city"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@color/transparent"
+        android:numColumns="3"
+        android:paddingLeft="@dimen/dim20"
+        android:paddingRight="@dimen/dim20" >
+    </cn.bluemobi.view.ExtraGridView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim1"
+        android:background="@color/grey_shallow" />
+
+</LinearLayout>

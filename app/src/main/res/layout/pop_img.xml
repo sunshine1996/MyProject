@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/bg_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:padding="@dimen/dim15" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_corner"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/bt_tack_photo_upload"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_top_corner"
+                android:padding="@dimen/dim20"
+                android:text="拍照"
+                android:textColor="@color/grey_deep" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim1"
+                android:background="@color/grey_deep" />
+
+            <Button
+                android:id="@+id/bt_native_upload"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_bottom_corner"
+                android:padding="@dimen/dim20"
+                android:text="从相册选择"
+                android:textColor="@color/grey_deep" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dim20"
+            android:layout_marginTop="@dimen/dim20"
+            android:background="@drawable/bg_white_corner"
+            android:padding="@dimen/dim20"
+            android:text="取消"
+            android:textColor="@color/grey_deep" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dim20"
+        android:text="@string/search_history"
+        android:textColor="@color/tv_grey"
+        android:textSize="@dimen/txt30" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dim20"
+            android:paddingRight="@dimen/dim20">
+
+            <com.yoga.china.view.ExtraListView
+                android:id="@+id/lv_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/line_grey"
+                android:dividerHeight="@dimen/dim2"
+                android:listSelector="@color/trans" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim2"
+                android:background="@color/line_grey" />
+
+            <Button
+                android:id="@+id/btn_clear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/trans"
+                android:visibility="gone"
+                android:gravity="center"
+                android:text="@string/clear_search_history"
+                android:textColor="@color/green_light"
+                android:textSize="@dimen/txt30" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

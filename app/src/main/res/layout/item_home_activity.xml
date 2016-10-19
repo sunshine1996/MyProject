@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/temp_activity" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="呼吸瑜伽教学呼吸瑜伽教学"
+        android:textColor="@color/tv_black"
+        android:textSize="@dimen/txt35" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/location"
+        android:drawablePadding="@dimen/dim10"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="四川  成都"
+        android:textColor="@color/tv_orange"
+        android:textSize="@dimen/txt35" />
+
+</LinearLayout>

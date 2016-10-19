@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dim280"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="@dimen/dim30">
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="@dimen/dim250"
+        android:layout_height="@dimen/dim250"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/temp_story" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dim16"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="理想国，理想的另一种可能"
+            android:textColor="@color/tv_black"
+            android:textSize="@dimen/txt40" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2016-04-13"
+                android:textColor="@color/tv_grey"
+                android:textSize="@dimen/txt35" />
+
+            <TextView
+                android:id="@+id/tv_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_frame_green"
+                android:paddingBottom="@dimen/dim2"
+                android:paddingLeft="@dimen/dim15"
+                android:paddingRight="@dimen/dim15"
+                android:paddingTop="@dimen/dim2"
+                android:text="人物故事"
+                android:textColor="@color/base_green"
+                android:textSize="@dimen/txt35" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

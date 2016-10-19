@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line_grey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/dim30">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/dim20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/head_portrait"
+                android:textColor="@color/tv_grey"
+                android:textSize="@dimen/txt35" />
+
+            <com.yoga.china.view.RoundImageView
+                android:id="@+id/iv_head"
+                android:layout_width="@dimen/dim120"
+                android:layout_height="@dimen/dim120"
+                android:layout_alignParentRight="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/temp_head"
+                android:transitionName="@string/trans_anim" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim2"
+            android:background="@color/line_grey" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dim20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nick_name"
+                android:textColor="@color/tv_grey"
+                android:textSize="@dimen/txt35" />
+
+            <TextView
+                android:id="@+id/tv_nick_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="潘晓昕"
+                android:textColor="@color/tv_grey"
+                android:textSize="@dimen/txt35" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim2"
+            android:background="@color/line_grey" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dim20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender"
+                android:textColor="@color/tv_grey"
+                android:textSize="@dimen/txt35" />
+
+            <RadioGroup
+                android:id="@+id/rg_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bg_white_fragme_green_corner"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_boy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/left_white_green_corner"
+                    android:button="@color/trans"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dim8"
+                    android:paddingLeft="@dimen/dim20"
+                    android:paddingRight="@dimen/dim20"
+                    android:paddingTop="@dimen/dim8"
+                    android:text="@string/boy"
+                    android:textColor="@color/black_white"
+                    android:textSize="@dimen/txt35" />
+
+                <RadioButton
+                    android:id="@+id/rb_girl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-2dp"
+                    android:background="@drawable/right_white_green_corner"
+                    android:button="@color/trans"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dim8"
+                    android:paddingLeft="@dimen/dim20"
+                    android:paddingRight="@dimen/dim20"
+                    android:paddingTop="@dimen/dim8"
+                    android:text="@string/girl"
+                    android:textColor="@color/black_white"
+                    android:textSize="@dimen/txt35" />
+
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim2"
+            android:background="@color/line_grey" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dim20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/birthday"
+                android:textColor="@color/tv_grey"
+                android:textSize="@dimen/txt35" />
+
+            <TextView
+                android:id="@+id/tv_birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="1992-10-01"
+                android:textColor="@color/tv_grey"
+                android:textSize="@dimen/txt35" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dim30"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dim20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/area"
+                android:textColor="@color/tv_grey"
+                android:textSize="@dimen/txt35" />
+
+            <TextView
+                android:id="@+id/tv_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="上海-虹口"
+                android:textColor="@color/tv_grey"
+                android:textSize="@dimen/txt35" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim2"
+            android:background="@color/line_grey" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dim20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/area"
+                android:textColor="@color/tv_grey"
+                android:textSize="@dimen/txt35" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim2"
+            android:background="@color/line_grey" />
+    </LinearLayout>
+
+</LinearLayout>
